@@ -1,0 +1,11 @@
+---
+- name: Conditional 1 playbook
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: ping servers
+      ping: 
+
+    - name: print OS information
+      debug:
+        msg: "{{ ansible_distribution }}"
