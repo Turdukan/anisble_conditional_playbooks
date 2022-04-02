@@ -1,0 +1,6 @@
+---
+- name: update packages
+  hosts: all
+  gather_facts: no
+  tasks: 
+    - name: update packages 
